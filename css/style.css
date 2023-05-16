@@ -40,9 +40,25 @@ p{
 
 .row{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 30px;
 }
 
+.col{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.big-container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+.small-container{
+    width: 800px;
+    margin: 0 auto;
+}
 
 /* HEADER */
 
@@ -67,11 +83,6 @@ header .header-bottom{
     background-color: #B4D0E7;
     padding: 50px 0;
     height: 600px;
-}
-
-header .header-bottom .big-container{
-    width: 1000px;
-    margin: 0 auto;
 }
 
 header .header-bottom .big-container *{
@@ -105,10 +116,36 @@ header .header-bottom .big-container .row .row-right img{
 }
 
 
+/* MAIN */
+
+main .small-container{
+    margin-top: 50px;
+}
+
+main .row-section .row *{
+    width: calc(100% / 3);
+}
+
+main .simple-section{
+    display: flex;
+}
+
+main .simple-section *{
+    width: 50%;
+}
+
 
 
 
 /* DEBUG */
+
+.debug main{
+    background-color: lightcoral;
+}
+
+.debug main .small-container{
+    border: 3px dashed black;
+}
 
 
 
