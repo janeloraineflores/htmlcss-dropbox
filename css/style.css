@@ -6,8 +6,52 @@
     box-sizing: border-box;
 }
 
+
 /* GENERAL */
 
 *{
     font-family: 'Open Sans', sans-serif;
 }
+
+
+/* HEADER */
+
+header .header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+header .header-bottom{
+    padding: 50px 0;
+}
+
+header .header-bottom .big-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+/* DEBUG */
+
+.debug header .header-top{
+    background-color: lightcoral;
+}
+
+.debug header .header-top *{
+    border: 3px dashed black;
+}
+
+.debug header .header-bottom{
+    background-color: aquamarine;
+}
+
+.debug header .header-bottom .big-container{
+    background-color: blue;
+    border: 3px dashed black;
+    height: 500px;
+}
+
