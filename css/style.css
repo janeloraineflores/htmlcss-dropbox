@@ -344,10 +344,35 @@ main .row-section.small-container .row p{
 }
 
 
+/* FOOTER */
+
+footer .big-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 
 
 /* DEBUG */
 
+.debug footer .footer-top{
+    background-color: red;
+    height: 300px;
+}
 
+.debug footer .footer-top .big-container{
+    border: 2px solid black;
+    height: 200px;
+}
+
+.debug footer .footer-top .col-footer{
+    border: 2px solid white;
+}
+
+.debug footer .footer-bottom{
+    background-color: lightcoral;
+    height: 100px;
+}
 
