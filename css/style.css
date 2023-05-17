@@ -346,33 +346,41 @@ main .row-section.small-container .row p{
 
 /* FOOTER */
 
+footer{
+    background-color: black;
+}
+
+footer ul li h3{
+    margin-bottom: 30px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.footer-top{
+    color: white;
+}
+
 footer .big-container{
     display: flex;
     justify-content: space-between;
+    padding: 70px 0;
+}
+
+.footer-bottom a{
+    color: rgba(252, 244, 244, 0.356);
+    border-top: 1px solid white;
+    padding-top: 30px;
+    padding-right: 20px;
 }
 
 
 
-
-
-/* DEBUG */
-
-.debug footer .footer-top{
-    background-color: red;
-    height: 300px;
-}
-
-.debug footer .footer-top .big-container{
-    border: 2px solid black;
-    height: 200px;
-}
-
-.debug footer .footer-top .col-footer{
-    border: 2px solid white;
-}
-
-.debug footer .footer-bottom{
-    background-color: lightcoral;
-    height: 100px;
-}
 
