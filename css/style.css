@@ -17,24 +17,32 @@ ul{
     list-style-type: none;
 }
 
-ul li{
-    display: inline-block;
-}
-
-a{
-    text-decoration: none;
-    color: black;
-}
 
 button{
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.button-blue-bg{
     background-color:#0061FF;
     color: white;
     border: none;
-    padding: 5px 10px;
-    cursor: pointer;
 }
 
-p{
+.button-no-bg{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    
+}
+
+.button-white-bg{
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+p, form{
     font-size: 13px;
 }
 
@@ -59,6 +67,16 @@ p{
     width: 800px;
     margin: 0 auto;
 }
+
+h2{
+    font-size: 2em;
+}
+
+.a-special{
+    font-size: 13px;
+    color: blue;
+}
+
 
 /* HEADER */
 
@@ -115,37 +133,221 @@ header .header-bottom .big-container .row .row-right img{
     width: 100%
 }
 
+header .header-top .header-top-nav ul li{
+    display: inline-block;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
 
 /* MAIN */
 
-main .small-container{
-    margin-top: 50px;
+.box .title-box{
+    text-align: center;
+    font-size: 13px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
 }
 
-main .row-section .row *{
+main .small-container{
+    margin-top: 80px;
+}
+
+main .small-container  *{
+    margin-bottom: 10px;
+}
+
+main .row-section .row > *{
     width: calc(100% / 3);
 }
 
-main .simple-section{
-    display: flex;
+/* MAIN SECTION 1 */
+
+main .row-section .row .box{
+    width: calc((100% / 3) - 20px);
 }
 
-main .simple-section *{
-    width: 50%;
+.box{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0 10px;
 }
+
+.box ul{
+    margin: 40px 0;
+}
+
+.box ul li {
+    font-size: 13px;
+}
+
+.box small .price{
+    font-weight: bold;
+}
+
+.box small .months{
+    color: rgba(0, 0, 0, 0.388);
+}
+
+hr{
+    margin: 30px 0;
+}
+
+.fa-check{
+    color: blue;
+}
+
+.box.simple-section p{
+    margin-top: 50px;
+}
+
+
+/* MAIN SECTION 2 */
+
+main .simple-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .simple-section .left{
+   width: 65%;
+}
+
+main .simple-section .left img{
+    width: 100%;
+ }
+
+main .simple-section .right{
+    padding-top: 50px;
+    width: 30%;
+}
+
+
+/* MAIN SECTION 3 */
+
+main .row-section.small-container .row img{
+    width: 100%;
+}
+
+main .row-section.small-container .row h3{
+    margin-left: 10px;
+}
+
+main .row-section.small-container .row p{
+    margin-left: 10px;
+}
+
+
+/* MAIN SECTION 4 */
+
+.special.small-container h2{
+    margin-bottom: 50px;
+}
+
+
+/* MAIN SECTION 5 */
+
+.col{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-image{
+    width: calc(100% / 2);
+    padding: 100px;
+    position: relative;
+}
+
+.col-image img{
+    width: 50%;
+    filter:  grayscale(1) invert(1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.design-bg{
+    background-color: #A2D39B;
+}
+
+.arizona-bg{
+    background-color: #5D0325;
+}
+
+.florida-bg{
+    background-color: #0093CE;
+}
+
+.topps-bg{
+    background-color: #FF1C1C;
+}
+
+.grey-bg{
+    background-color: #F5F5F5;
+}
+
+.world-bg{
+    background-color: #D5001F;
+}
+
+.hearts-bg{
+    background-color: #B4D0E7;
+}
+
+.lonely-bg{
+    background-color: #0D2481;
+}
+
+.clear-bg{
+    background-color: #f3f302;
+}
+
+.col > *{
+  padding: 40px;
+  
+}
+
+
+/* MAIN SECTION 6 */
+
+.special-bg{
+    background-color: #B4D0E7;
+    padding: 50px 0;
+}
+
+.special-bg h2{
+    width: 50%;
+    color: #61082B;
+}.
+
+.special-bg button{
+    width: 30%;   
+}
+
+
+/* MAIN SECTION 7 */
+
+.small-container .questions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questions a{
+    text-decoration: none;
+    color: black;
+}
+
 
 
 
 
 /* DEBUG */
-
-.debug main{
-    background-color: lightcoral;
-}
-
-.debug main .small-container{
-    border: 3px dashed black;
-}
 
 
 
