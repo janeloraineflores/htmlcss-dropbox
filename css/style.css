@@ -84,7 +84,14 @@ header .header-top{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px
+    padding: 20px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
 }
 
 header .header-top .header-top-nav {
@@ -99,8 +106,8 @@ header .header-top .header-top-nav *{
 
 header .header-bottom{
     background-color: #B4D0E7;
-    padding: 50px 0;
-    height: 600px;
+    padding: 80px 0;
+    height: 630px;
 }
 
 header .header-bottom .big-container *{
